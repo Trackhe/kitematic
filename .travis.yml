@@ -24,9 +24,9 @@ deploy:
   api_key:
     secure: j1InOUFsxYAMiNEERC1/KYXcC/DsfvpSlCnVTlU4yLwg7wjpb9ENYgwYQRYy58a+wA4uI08ar8jKwjEAuHhqhYqD3ztRkYGWKccGpEbMTAaGqP9JRLSP5awJUw4/VSCE/Swq7odalmWPA1JZC6+8n6ZOaLOpxJWxDm7SQnF6iQIuTIwtGrg1PeOSh1drMSYRDGC5m8dpY9Jc/EoCPEThYU+RoDqg98yPLxfKKmWAFG0iS5lAHbIZ7MGWr5g2snMRUzD7TC/BFxA/Za5i+uyxKEr4CZBXE7HqXL5qUqAlItGDDh7ioSicDhV/8y8JxbAN/RnXnevswbzY2+GD2dkjDwEDnSJ/ajJekCr3DYInMvSDGMpGpEEzcxZ1rlVZ+LPklfMyKWnOkd2M2rooPQmlaplWo6zIm/8MLETqMsO57F3W9rOcOKs+ojvIMnhPyfDubji9WI/4cR6oq+1UnBp296EYrnl6VKmewt/5+wDzKMfdxChqdvsb8hK5gVLeI9xOh/bTEdNquTsEk2G64e/HgHz35Qxv/2rXW1xUCYoiNQ1T/u2ZwHn7dUnNpZXx5b2ueT12LaWQP9YEjoaz/iYDfQOw3/X/m3Yap1gPQG9nM1leBMkexFOvGHzdxujBM4sjImnEzGE85Dp6+0TDgf5nv1JrMoHMCQT5EmJQHb329mY=
   file:
-    - release/Kitematic-0.17.10-Mac.zip
-    - release/Kitematic-0.17.10-Debian-Ubuntu.zip
-    - release/Kitematic-0.17.10-Windows.zip
+    - release/Kitematic-0.17.11-Mac.zip
+    - release/Kitematic-0.17.11-Debian-Ubuntu.zip
+    - release/Kitematic-0.17.11-Windows.zip
   skip_cleanup: true
   on:
     tags: true
