@@ -1,5 +1,12 @@
 /* Sidebar */
 
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .sidebar {
   background-color: white;
   margin: 0;
@@ -26,6 +33,15 @@
       display: inline-block;
       position: relative;
     }
+    .btn-refresh {
+  border: 0;
+  margin: 2px;
+  font-size: 1.6em;
+  cursor: pointer;
+  &.refreshing {
+    -webkit-animation: spin 1s linear infinite;
+  }
+}
     .create {
       display: flex;
       flex: 1 auto;

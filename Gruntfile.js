@@ -234,7 +234,7 @@ module.exports = function (grunt) {
       },
       debian: {
         options: {
-          archive: './release/' + VERSION_FILENAME + '-Ubuntu.zip',
+          archive: './release/' + VERSION_FILENAME + '-Debian-Ubuntu.zip',
           mode: 'zip',
         },
         files: [{
@@ -385,7 +385,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-electron-installer-redhat');
 
   grunt.registerTask('build', ['newer:babel', 'less', 'newer:copy:dev']);
-  grunt.registerTask('default', ['build', 'shell:electron', 'watch']);
+  grunt.registerTask('default', ['release:debian:x64', 'release:mac', 'release:windows']);
 
   grunt.registerTask('release:linux', [
     'clean:release', 'build', 'shell:linux_npm',
