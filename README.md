@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/docker/kitematic.svg?branch=master)](https://travis-ci.org/docker/kitematic)
+[![Build Status](https://travis-ci.org/Trackhe/kitematic.svg?branch=master)](https://travis-ci.org/trackhe/kitematic)
 
 
 Kitematic is a simple application for managing Docker containers on Mac, Linux and Windows.
