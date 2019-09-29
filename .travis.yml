@@ -29,6 +29,6 @@ deploy:
     - release/Kitematic-0.17.11-Windows.zip
   skip_cleanup: true
   on:
-    tags: true
+    draft: true
     all_branches: true
     repo: Trackhe/kitematic
