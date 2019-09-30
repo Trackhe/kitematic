@@ -181,6 +181,7 @@ module.exports = function (grunt) {
           async: true,
           execOptions: {
             env: env,
+            dir: 'app',
           },
         },
       },
@@ -386,6 +387,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', ['newer:babel', 'less', 'newer:copy:dev']);
   grunt.registerTask('default', ['release:debian:x64', 'release:mac', 'release:windows']);
+  grunt.registerTask('debug', ['build', 'shell:electron', 'watch']);
 
   grunt.registerTask('release:linux', [
     'clean:release', 'build', 'shell:linux_npm',
