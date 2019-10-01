@@ -1,6 +1,8 @@
 os: osx
 sudo: false
 language: node_js
+cache:
+  npm: false
 node_js:
 - '10'
 - '12'
@@ -13,9 +15,6 @@ before_script:
 - npm install electron-installer-debian
 - npm install electron-installer-dmg
 - npm install electron-forge
-cache:
-  directories:
-  - node_modules
 install: npm i
 script:
 - grunt
@@ -30,5 +29,11 @@ deploy:
   skip_cleanup: true
   on:
     draft: true
-    all_branches: true
+    branches:
+      only:
+        - release
     repo: Trackhe/kitematic
+notifications:
+  email:
+    on_success: never
+    on_failure: always
