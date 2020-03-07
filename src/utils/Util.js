@@ -101,7 +101,6 @@ module.exports = {
     return app.getPath('home');
   },
   documents: function () {
-    // TODO: fix me for windows 7
     return 'Documents';
   },
   CommandOrCtrl: function () {

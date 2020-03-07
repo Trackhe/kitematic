@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '.',
-          src: ['package.json', 'settings.json', 'index.html'],
+          src: ['package.json', 'settings.json', 'index.html', 'indexdark.html'],
           dest: 'build/'
         }, {
           expand: true,
@@ -157,7 +157,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'build/main.css': 'styles/main.less'
+          'build/main.css': 'styles/mainlight.less',
+          'build/maindark.css': 'styles/maindark.less'
         }
       }
     },
@@ -265,7 +266,7 @@ module.exports = function (grunt) {
         tasks: ['less']
       },
       copy: {
-        files: ['images/*', 'index.html', 'fonts/*'],
+        files: ['images/*', 'index.html', 'indexdark.html', 'fonts/*'],
         tasks: ['newer:copy:dev']
       }
     },

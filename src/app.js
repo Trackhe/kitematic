@@ -22,6 +22,8 @@ import routerContainer from './router';
 import repositoryActions from './actions/RepositoryActions';
 import machine from './utils/DockerMachineUtil';
 
+//console.log(localStorage.getItem('settings.ColorShema'));
+
 Promise.config({cancellation: true});
 
 hubUtil.init();
@@ -51,7 +53,13 @@ var router = Router.create({
 router.run(Handler => React.render(<Handler/>, document.body));
 routerContainer.set(router);
 
+console.log(localStorage.getItem('settings.colorshema'));
 
+var link = document.createElement( "link" );
+link.href = "main" + localStorage.getItem('settings.colorshema') + ".css";
+link.type = "text/css";
+link.rel = "stylesheet";
+document.getElementsByTagName( "head" )[0].appendChild( link );
 
 setupUtil.setup().then(() => {
   Menu.setApplicationMenu(Menu.buildFromTemplate(template()));
