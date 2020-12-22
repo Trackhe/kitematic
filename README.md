@@ -5,7 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/trackhe/kitematic.svg)](https://GitHub.com/trackhe/kitematic/issues/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/trackhe/kitematic)](https://GitHub.com/trackhe/kitematic/pull/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/trackhe/kitematic/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/maintenance/no/2020)](https://GitHub.com/trackhe/kitematic/graphs/commit-activity)
 
 
 Kitematic is a simple application for managing Docker containers on Mac, Linux and Windows.
